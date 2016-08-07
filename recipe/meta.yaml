@@ -8,7 +8,7 @@ package:
   version: {{ libgfortran_version|join('.') }}
 
 build:
-  number: 0
+  number: 1
   skip: true                                                  # [not osx]
   always_include_files:
     - lib/libgfortran.dylib                                   # [osx]

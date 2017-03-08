@@ -9,7 +9,7 @@ package:
 
 build:
   number: 0
-  skip: true                                                  # [not osx]
+  skip: true                                                  # [win]
   always_include_files:
     - lib/libgfortran.dylib                                   # [osx]
     - lib/libgfortran.{{ libgfortran_version[0] }}.dylib      # [osx]
@@ -29,7 +29,7 @@ build:
 
 requirements:
   build:
-    - gcc 4.8.5
+    - gcc 4.8.5     # [osx]
 
 test:
   commands:
@@ -59,3 +59,4 @@ extra:
     - jakirkham
     - msarahan
     - pelson
+    - lexual

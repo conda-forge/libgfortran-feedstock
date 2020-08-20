@@ -11,7 +11,7 @@ package:
   version: 3.0.1
 
 build:
-  number: 0
+  number: 1
   skip: true                                                  # [not osx]
   always_include_files:
     - lib/libgfortran.dylib                                   # [osx]
